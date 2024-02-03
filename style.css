@@ -1,0 +1,178 @@
+/* global */
+
+.grid-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Merriweather', serif;
+    background-color: #24292e;
+    color: #fafbfc;
+
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-top: 2rem;
+    background-color: #24292e;
+    color: #fafbfc;
+}
+
+.navbar a {
+    color: #fafbfc;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.navbar a:hover {
+    color: #2dba4e;
+    border-bottom: 1px solid #2dba4e;
+}
+
+
+h2,.white{
+    color: ##fafbfc;
+}
+
+a{
+    color: #7A7C80;
+    text-decoration: none;
+}
+
+.section-1{
+    padding-top: 30vh;
+    text-align: center;
+    position:relative;
+}
+
+.section-1 p{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin:0;
+}
+
+.section-1 h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+}
+
+.section-1 a{
+    font-size: 1.5rem;
+    padding: 10px;
+}
+/* section 2 */
+.section-2{
+    width: 70%;
+    position:relative;
+    padding-top: 30vh;
+}
+.section-2_exp{
+    width: 70%;
+    position:relative;
+    padding-top: 10vh;
+}
+
+.section-2_contact{
+    width: 70%;
+    position:relative;
+    padding-top: 25vh;
+}
+
+.section-2 h2{
+    font-size: 1.7rem;
+    margin-bottom: 10px;
+    padding: 2px;
+}
+
+.section-2 p{
+    font-size: 1.1rem;
+    padding-bottom: 10px;
+    margin:0;
+}
+
+.section-2 a{
+    display: block;
+    padding: 5px;
+    font-size: 1.2rem;
+    padding-left: 0;
+    width: 100px;
+}
+/* animations / utilities */
+.section-2 a:hover{
+    font-size: 1.3rem;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.exp_div{
+    padding: 2.5px;
+}
+.exp_location{
+    padding: 0.5px;
+    color: #7A7C80;
+    font-weight: lighter;
+    font-style: italic;
+}
+
+.section-1 a:hover{
+    color: #2dba4e;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.white:hover{
+    position: relative;
+    padding-left: 10px;
+}
+
+.contact_div{
+    border: 1px solid #1e3523;
+    border-radius: 10px;
+    background-color: #1e3523;
+}
+
+.contact_div h2 {
+    padding: 4px;
+    text-align: center;
+    font-weight: 100;
+    border: none;
+}
+.contact_div p {
+    margin: 2rem;
+    padding: 4px;
+    text-align: center;
+    font-weight: 100 !important;
+    border: none;
+}
+
+.contact_div a {
+    text-decoration: none; /* Removes the underline from the link */
+    font-weight: bold; /* Makes the email address bold */
+    text-align: right;
+
+}
+
+
+
+/* media queres */
+@media(max-width:780px){
+    .grid-2{
+        grid-template-columns: 1fr;
+    }
+    .section-1{
+        padding:0;
+        padding-top: 5rem;
+    }
+    .section-2{
+        padding: 0;
+        padding-left: 1.5rem;
+        padding-top: 2rem;
+    }
+}
